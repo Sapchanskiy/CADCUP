@@ -52,14 +52,14 @@ namespace GlassfullPlugin.UI
             double height, 
              double bottomThickness, double lowDiameter)
         {
+            TypeValidation();
+            ValueValidation();
+
             WallWidth = wallWidth * _tomm;
             HighDiameter = highDiameter * _tomm;
             Height = height * _tomm;
             BottomThickness = bottomThickness * _tomm;
-            LowDiameter = lowDiameter * _tomm;
-
-            ValueValidation();
-            TypeValidation();
+            LowDiameter = lowDiameter * _tomm;     
         }
 
         /// <summary>

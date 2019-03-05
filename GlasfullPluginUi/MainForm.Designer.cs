@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.FacetedGlassCheck = new System.Windows.Forms.CheckBox();
             this.label5 = new System.Windows.Forms.Label();
             this.LowDiameter = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -40,7 +41,6 @@
             this.HighDiameter = new System.Windows.Forms.TextBox();
             this.WallWidth = new System.Windows.Forms.TextBox();
             this.BuildButton = new System.Windows.Forms.Button();
-            this.FacetedGlassCheck = new System.Windows.Forms.CheckBox();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,6 +63,16 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Построение детали";
+            // 
+            // FacetedGlassCheck
+            // 
+            this.FacetedGlassCheck.AutoSize = true;
+            this.FacetedGlassCheck.Location = new System.Drawing.Point(184, 168);
+            this.FacetedGlassCheck.Name = "FacetedGlassCheck";
+            this.FacetedGlassCheck.Size = new System.Drawing.Size(114, 17);
+            this.FacetedGlassCheck.TabIndex = 11;
+            this.FacetedGlassCheck.Text = "Граненый стакан";
+            this.FacetedGlassCheck.UseVisualStyleBackColor = true;
             // 
             // label5
             // 
@@ -159,16 +169,6 @@
             this.BuildButton.UseVisualStyleBackColor = true;
             this.BuildButton.Click += new System.EventHandler(this.BuildButton_Click);
             // 
-            // FacetedGlassCheck
-            // 
-            this.FacetedGlassCheck.AutoSize = true;
-            this.FacetedGlassCheck.Location = new System.Drawing.Point(184, 168);
-            this.FacetedGlassCheck.Name = "FacetedGlassCheck";
-            this.FacetedGlassCheck.Size = new System.Drawing.Size(114, 17);
-            this.FacetedGlassCheck.TabIndex = 11;
-            this.FacetedGlassCheck.Text = "Граненый стакан";
-            this.FacetedGlassCheck.UseVisualStyleBackColor = true;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -180,6 +180,7 @@
             this.MinimumSize = new System.Drawing.Size(241, 278);
             this.Name = "MainForm";
             this.Text = "Построение стакана";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
