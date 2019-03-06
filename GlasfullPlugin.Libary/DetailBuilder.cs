@@ -98,8 +98,9 @@ namespace GlassfullPlugin.Libary
 
             _doc3D = (ksDocument3D)_kompas.ActiveDocument3D();
             _part = (ksPart)_doc3D.GetPart((short)Part_Type.pTop_Part);
-
-            if (checkFaceted) // Определяем реализацию, если мы нажали на чекбокс, то идем по вектке граненого стакана
+            
+            // Определяем реализацию, если мы нажали на чекбокс, то идем по вектке граненого стакана
+            if (checkFaceted)
             {
                 BuildFaceted(wallwidth, highdiameter, height, bottomthickness, lowdiameter);
             }

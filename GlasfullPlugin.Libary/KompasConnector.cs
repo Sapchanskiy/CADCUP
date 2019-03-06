@@ -20,14 +20,17 @@ namespace GlassfullPlugin.Libary
         {
             if (Kompas == null)
             {
-                var type = Type.GetTypeFromProgID("KOMPAS.Application.5");//поиск в пространстве COM-объектов объекта со следующим названием.
-                Kompas = (KompasObject)Activator.CreateInstance(type);//Создает экземпляр этого приложения и получает на него ссылку. 
+                //поиск в пространстве COM-объектов объекта со следующим названием.
+                var type = Type.GetTypeFromProgID("KOMPAS.Application.5");
+                //Создает экземпляр этого приложения и получает на него ссылку. 
+                Kompas = (KompasObject)Activator.CreateInstance(type);
             }
-
             if (Kompas != null)
             {
-                Kompas.Visible = true;//Делаем его видимым. 
-                Kompas.ActivateControllerAPI();//Передаем управление API. 
+                //Делаем его видимым.
+                Kompas.Visible = true;
+                //Передаем управление API. 
+                Kompas.ActivateControllerAPI();
             }
         }
 

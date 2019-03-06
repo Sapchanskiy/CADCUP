@@ -37,7 +37,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.BottomThickness = new System.Windows.Forms.TextBox();
-            this.Height = new System.Windows.Forms.TextBox();
+            this.HeightTextBox = new System.Windows.Forms.TextBox();
             this.HighDiameter = new System.Windows.Forms.TextBox();
             this.WallWidth = new System.Windows.Forms.TextBox();
             this.BuildButton = new System.Windows.Forms.Button();
@@ -54,7 +54,7 @@
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.BottomThickness);
-            this.groupBox2.Controls.Add(this.Height);
+            this.groupBox2.Controls.Add(this.HeightTextBox);
             this.groupBox2.Controls.Add(this.HighDiameter);
             this.groupBox2.Controls.Add(this.WallWidth);
             this.groupBox2.Location = new System.Drawing.Point(9, 12);
@@ -137,11 +137,11 @@
             // 
             // Height
             // 
-            this.Height.Location = new System.Drawing.Point(221, 89);
-            this.Height.Name = "Height";
-            this.Height.Size = new System.Drawing.Size(68, 20);
-            this.Height.TabIndex = 2;
-            this.Height.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ValidateDoubleTextBoxs_KeyPress);
+            this.HeightTextBox.Location = new System.Drawing.Point(221, 89);
+            this.HeightTextBox.Name = "Height";
+            this.HeightTextBox.Size = new System.Drawing.Size(68, 20);
+            this.HeightTextBox.TabIndex = 2;
+            this.HeightTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ValidateDoubleTextBoxs_KeyPress);
             // 
             // HighDiameter
             // 
@@ -180,7 +180,6 @@
             this.MinimumSize = new System.Drawing.Size(241, 278);
             this.Name = "MainForm";
             this.Text = "Построение стакана";
-            this.Load += new System.EventHandler(this.MainForm_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
@@ -192,7 +191,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox BottomThickness;
-        private System.Windows.Forms.TextBox Height;
+        private System.Windows.Forms.TextBox HeightTextBox;
         private System.Windows.Forms.TextBox HighDiameter;
         private System.Windows.Forms.TextBox WallWidth;
         private System.Windows.Forms.Button BuildButton;
